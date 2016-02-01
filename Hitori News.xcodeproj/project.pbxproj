@@ -14,6 +14,7 @@
 		087692041C5FCFA300145BB1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087692031C5FCFA300145BB1 /* UIColor.swift */; };
 		087692061C5FD02E00145BB1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087692051C5FD02E00145BB1 /* String.swift */; };
 		087692081C5FD48E00145BB1 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087692071C5FD48E00145BB1 /* MasterViewController.swift */; };
+		0876920A1C5FD93E00145BB1 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087692091C5FD93E00145BB1 /* LeftViewController.swift */; };
 		0885810D1C5D48A7009C75D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0885810C1C5D48A7009C75D3 /* AppDelegate.swift */; };
 		088581121C5D48A7009C75D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088581101C5D48A7009C75D3 /* Main.storyboard */; };
 		088581141C5D48A7009C75D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088581131C5D48A7009C75D3 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		087692031C5FCFA300145BB1 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		087692051C5FD02E00145BB1 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		087692071C5FD48E00145BB1 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		087692091C5FD93E00145BB1 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		088581091C5D48A7009C75D3 /* Hitori News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hitori News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0885810C1C5D48A7009C75D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		088581111C5D48A7009C75D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				088581181C5D48A7009C75D3 /* Info.plist */,
 				087691FD1C5FBA7700145BB1 /* ContainerVC.swift */,
 				087692071C5FD48E00145BB1 /* MasterViewController.swift */,
+				087692091C5FD93E00145BB1 /* LeftViewController.swift */,
 			);
 			path = "Hitori News";
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				087692061C5FD02E00145BB1 /* String.swift in Sources */,
 				0885810D1C5D48A7009C75D3 /* AppDelegate.swift in Sources */,
 				087692041C5FCFA300145BB1 /* UIColor.swift in Sources */,
+				0876920A1C5FD93E00145BB1 /* LeftViewController.swift in Sources */,
 				087691F41C5D72EB00145BB1 /* UINavigationController.swift in Sources */,
 				087691F21C5D6B3500145BB1 /* UIViewController.swift in Sources */,
 			);
