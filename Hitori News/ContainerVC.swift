@@ -1,18 +1,25 @@
 //
-//  ViewController.swift
+//  File.swift
 //  Hitori News
 //
-//  Created by Hitori Achmad on 1/31/16.
+//  Created by Hitori Achmad on 2/1/16.
 //  Copyright © 2016 Hitori Achmad. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import SlideMenuControllerSwift
 import Alamofire
-class ViewController: UIViewController {
-
+class ContainerViewController: SlideMenuController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
+        
+            
+            //mainViewController.addRightBarButtonWithImage(UIImage(named: "fuga")!)
+        
+        
+        
         
         Alamofire.request(.GET, "http://webservice.foodr.id/tes").responseJSON {response in
             switch response.result {
@@ -34,12 +41,19 @@ class ViewController: UIViewController {
         
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        print("load will appear container")
+        self.setNavigationBarItem()
     }
-
-
+    override func awakeFromNib() {
+        if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("Main") {
+            self.mainViewController = controller
+        }
+        if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("Left") {
+            self.leftViewController = controller
+        }
+        super.awakeFromNib()
+    }
+    
 }
-
