@@ -13,20 +13,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    var storyboard : UIStoryboard?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        self.storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let mainViewController = storyboard.instantiateViewControllerWithIdentifier("Main")
-        let leftViewController = storyboard.instantiateViewControllerWithIdentifier("Left")
-        let rightViewController = storyboard.instantiateViewControllerWithIdentifier("Right")
+        let mainViewController = self.storyboard!.instantiateViewControllerWithIdentifier("Main")
+        let leftViewController = self.storyboard!.instantiateViewControllerWithIdentifier("Left")
+        
         
         let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
         
-        //UINavigationBar.appearance().tintColor = UIColor(hex: "689F38")
+        UINavigationBar.appearance().tintColor = UIColor(hex: "689F38")
         
-        let slideMenuController = SlideMenuController(mainViewController: nvc, leftMenuViewController: leftViewController, rightMenuViewController: rightViewController)
+        let slideMenuController = SlideMenuController(mainViewController: nvc, leftMenuViewController: leftViewController)
         self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()
         

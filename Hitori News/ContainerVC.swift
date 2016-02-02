@@ -13,32 +13,7 @@ class ContainerViewController: SlideMenuController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view, typically from a nib.
-        
-            
-            //mainViewController.addRightBarButtonWithImage(UIImage(named: "fuga")!)
-        
-        
-        
-        
-        Alamofire.request(.GET, "http://webservice.foodr.id/tes").responseJSON {response in
-            switch response.result {
-            case .Success(let datalist):
-                //print("sukses")
-                let data_json = JSON(datalist)
-                //print(data_json)
-                let datas = data_json["data"].arrayValue
-                for data in datas{
-                    print(data["title"].stringValue)
-                    
-                }
-                
-            case .Failure(let error):
-                print("Error")
-                print(error)
-            }
-        }
-        
+
         
     }
     override func viewWillAppear(animated: Bool) {

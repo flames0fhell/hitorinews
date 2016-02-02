@@ -19,6 +19,8 @@
 		088581121C5D48A7009C75D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088581101C5D48A7009C75D3 /* Main.storyboard */; };
 		088581141C5D48A7009C75D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088581131C5D48A7009C75D3 /* Assets.xcassets */; };
 		088581171C5D48A7009C75D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088581151C5D48A7009C75D3 /* LaunchScreen.storyboard */; };
+		08FAA9D51C60DB890073D333 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FAA9D41C60DB890073D333 /* DummyViewController.swift */; };
+		08FAA9DA1C61021A0073D333 /* Halaman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FAA9D91C61021A0073D333 /* Halaman.swift */; };
 		20BAB2876EE9265D386FB317 /* Pods_Hitori_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DC9B6FE60C035CA75DF1BD /* Pods_Hitori_News.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		088581131C5D48A7009C75D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		088581161C5D48A7009C75D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		088581181C5D48A7009C75D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08FAA9D41C60DB890073D333 /* DummyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		08FAA9D91C61021A0073D333 /* Halaman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Halaman.swift; path = "Hitori News/Model/Halaman.swift"; sourceTree = "<group>"; };
 		B211700B909648807637D735 /* Pods-Hitori News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hitori News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hitori News/Pods-Hitori News.debug.xcconfig"; sourceTree = "<group>"; };
 		B7DC9B6FE60C035CA75DF1BD /* Pods_Hitori_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hitori_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DDB36C959971902B02DFAE /* Pods-Hitori News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hitori News.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hitori News/Pods-Hitori News.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 		088581001C5D48A7009C75D3 = {
 			isa = PBXGroup;
 			children = (
+				08FAA9D61C6101750073D333 /* Model */,
 				087691F01C5D6ADB00145BB1 /* Ext */,
 				0885810B1C5D48A7009C75D3 /* Hitori News */,
 				0885810A1C5D48A7009C75D3 /* Products */,
@@ -96,8 +101,17 @@
 				087691FD1C5FBA7700145BB1 /* ContainerVC.swift */,
 				087692071C5FD48E00145BB1 /* MasterViewController.swift */,
 				087692091C5FD93E00145BB1 /* LeftViewController.swift */,
+				08FAA9D41C60DB890073D333 /* DummyViewController.swift */,
 			);
 			path = "Hitori News";
+			sourceTree = "<group>";
+		};
+		08FAA9D61C6101750073D333 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08FAA9D91C61021A0073D333 /* Halaman.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		2A0B20A19ADB3361DE2F6108 /* Frameworks */ = {
@@ -243,10 +257,12 @@
 				087692081C5FD48E00145BB1 /* MasterViewController.swift in Sources */,
 				087691E31C5D593E00145BB1 /* SwiftyJSON.swift in Sources */,
 				087691FE1C5FBA7700145BB1 /* ContainerVC.swift in Sources */,
+				08FAA9D51C60DB890073D333 /* DummyViewController.swift in Sources */,
 				087692061C5FD02E00145BB1 /* String.swift in Sources */,
 				0885810D1C5D48A7009C75D3 /* AppDelegate.swift in Sources */,
 				087692041C5FCFA300145BB1 /* UIColor.swift in Sources */,
 				0876920A1C5FD93E00145BB1 /* LeftViewController.swift in Sources */,
+				08FAA9DA1C61021A0073D333 /* Halaman.swift in Sources */,
 				087691F41C5D72EB00145BB1 /* UINavigationController.swift in Sources */,
 				087691F21C5D6B3500145BB1 /* UIViewController.swift in Sources */,
 			);
@@ -362,6 +378,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Hitori News/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hitori.production.hitorinews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -376,6 +393,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Hitori News/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hitori.production.hitorinews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
